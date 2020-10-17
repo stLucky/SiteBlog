@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Личный блог Anne Sweet</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Spectral+SC:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-body">
+  <header class="header page-body__header">
+    <div class="layout-positioner">
+      <nav class="main-navigation">
+        <a class="link main-navigation__link"><img src="img/logo.png" alt="Логотип Anne Sweet"></a>
+        <ul class="site-navigation">
+          <li class="site-navigation__item">
+            <a class="link" href="#anchor__articles">Статьи</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="link" href="#anchor__about-me">Обо мне</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="link" href="#anchor__portfolio">Портфолио</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="link" href="#anchor__feedback">Написать мне</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="layout-positioner">
+      <h1 class="visually-hidden">Личный блог Anne Sweet</h1>
+      <section class="articles main__articles" id="anchor__articles">
+        <div class="articles__header">
+          <h2 class="title articles__title">Все статьи</h2>
+            <select class="articles__filter" name="tag-filter">
+              <option class="articles__filter-item" value="city">Город</option>
+              <option class="articles__filter-item" value="books">Книги</option>
+              <option class="articles__filter-item" value="travels">Путешествия</option>
+              <option class="articles__filter-item" value="recipes">Рецепты</option>
+              <option class="articles__filter-item" value="photo">Фотографии</option>
+              <option class="articles__filter-item" value="all">Все статьи</option>
+              <option class="articles__filter-item" value="" selected disabled>Выбрать тему</option>
+            </select>
+        </div>
+        <ul class="articles-top articles__top">
+          <li class="articles-top__item articles__article" data-category="travels">
+            <a class="link" href="article.html">
+              <article class="article-top">
+                <h3 class="article-top__title">Путешествие в Берлин в августе</h3>
+                <img class="article-top__img" src="img/article-1.jpg" width="387" height="268"
+                  alt="Солнечная оживленная улица Берлина">
+                <p class="text article-top__text">Летний месяц я провела в столице Германии вместе с друзьями. И вот как
+                  это
+                  было!</p>
+                <div class="article-top__footer">
+                  <p class="text article-top-footer__text">Теги: путешествия</p>
+                  <time class="text" datetime="2020-09-29">29.09.2020</time>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="articles-top__item articles__article" data-category="city">
+            <a class="link" href="article.html">
+              <article class="article-top">
+                <h3 class="article-top__title">Где выпить колдбрю в Москве</h3>
+                <img class="article-top__img" src="img/article-2.jpg" width="387" height="268"
+                  alt="Стакан напитка Колдбрю со льдом и с трубочкой">
+                <p class="text article-top__text">Собрала для вас список любимых кофеен,<br> где подают лучший летний
+                  напиток.
+                </p>
+                <div class="article-top-footer article-top__footer">
+                  <p class="text article-top-footer__text">Теги: город</p>
+                  <time class="text" datetime="2020-07-24">24.07.2020</time>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="articles-top__item articles__article" data-category="books">
+            <a class="link" href="article.html">
+              <article class="article-top">
+                <h3 class="article-top__title">Прочитано: книжные рекомендации</h3>
+                <img class="article-top__img" src="img/article-3.jpg" width="387" height="268"
+                  alt="Очки, лежащие на стопке из трех книг">
+                <p class="text article-top__text">Рассказываю о прочитанных за последнее время книгах: фавориты и
+                  провалы
+                </p>
+                <div class="article-top-footer article-top__footer">
+                  <p class="text article-top-footer__text">Теги: книги</p>
+                  <time class="text" datetime="2020-07-15">15.07.2020</time>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <ul class="articles-bottom articles__bottom">
+          <li class="articles-bottom__item articles__article" data-category="photo">
+            <a class="link" href="article.html">
+              <article class="article-bottom " >
+                <img src="img/article-4.jpg" width="590" height="552" alt="Зеленый куст с розовыми цветками">
+                <div class="article-bottom__container">
+                  <h3 class="article-bottom__title">Снимки на пленку</h3>
+                  <p class="article-bottom-text article-bottom__text">Поделилась с вами весенними фотографиями,<br> и
+                    секретами удачных снимков.</p>
+                  <div class="article-bottom-footer article-bottom__footer">
+                    <p class="text article-bottom-footer__text">Теги: фотографии</p>
+                    <time class="text" datetime="2020-06-29">29.06.2020</time>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="articles-bottom__item articles__article" data-category="recipes">
+            <a class="link" href="article.html">
+              <article class="article-bottom">
+                <img src="img/article-5.jpg" width="590" height="552" alt="Чизкейк с ягодами на блюдце с вилкой">
+                <div class="article-bottom__container">
+                  <h3 class="article-bottom__title">Домашний чизкейк</h3>
+                  <p class="article-bottom-text article-bottom__text">Что может быть лучше чизкейка с сезонными<br>
+                    ягодами? Только домашний чизкейк!
+                  </p>
+                  <div class="article-bottom-footer article-bottom__footer">
+                    <p class="text article-bottom-footer__text">Теги: рецепты</p>
+                    <time class="text" datetime="2020-06-24">24.06.2020</time>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <button class="button articles__button" type="button">Показать еще</button>
+      </section>
+      <section class="about-me main__about-me" id="anchor__about-me">
+        <h2 class="title about-me__title">Обо мне</h2>
+        <img class="about-me__image" src="img/about-me.jpg" width="590" height="693" alt="Моя фотография на пляже">
+        <div class="about-me__content">
+          <div class="about-me-content__paragraphs">
+            <p class="text about-me-content__text">Всем привет! Меня зовут Аня, и это мой личный блог.<br> Здесь ты
+              найдёшь
+              рассказы о моих путешествиях, снимки на&nbsp;плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+              что&nbsp;мне интересно.</p>
+            <p class="text about-me-content__text">Я работаю копирайтером, поэтому мой блог — это ещё и моё портфолио.
+              Ниже размещены
+              несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
+            <p class="text about-me-content__text">Если вы хотите написать мне — это можно сделать в соцсетях или через
+              <a class="about-me__link" href="#anchor__feedback">форму</a>. Всегда приятно услышать обратную связь от&nbsp;читателей и
+              познакомиться поближе.
+              </p>
+            <p class="text about-me-content__text">Приятного чтения!</p>
+          </div>
+          <aside class="about-me__aside">
+            <p class="about-me-aside__text">Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта,
+              я&nbsp;действительно узнаю настояющую себя.
+            </p>
+          </aside>
+        </div>
+      </section>
+      <section class="portfolio main__portfolio" id="anchor__portfolio">
+        <h2 class="title portfolio__title">Портфолио</h2>
+        <ul class="portfolio__list">
+          <li class="portfolio__item portfolio__item_theme_white">
+            <article class="product">
+              <h2 class="product__title">Блог HTML Academy</h2>
+              <h3 class="product__subtitle">&laquo;Как учиться продуктивно&raquo;</h3>
+              <p class="text product__text">Про основные методы обучения, которые помогут быстро и надолго запомнить
+                информацию.</p>
+            </article>
+          </li>
+          <li class="portfolio__item portfolio__item_theme_black">
+            <article class="product product_theme_white">
+              <h2 class="product__title">Журнал &laquo;LNK&raquo;</h2>
+              <h3 class="product__subtitle">&laquo;Зачем поцелуи нужны человеку? И&nbsp;какие они бывают&raquo;</h3>
+              <p class="text product__text">Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие
+                смысли
+                вкладывают в этот ритуал? И где корни этой практики?</p>
+            </article>
+          </li>
+          <li class="portfolio__item portfolio__item_theme_grey">
+            <article class="product">
+              <h2 class="product__title">Журнал &laquo;Т &mdash; Л&raquo;</h2>
+              <h3 class="product__subtitle">&laquo;Советы по эффективной<br> удаленной работе&raquo;</h3>
+              <p class="text product__text">Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.
+              </p>
+            </article>
+          </li>
+        </ul>
+        <button class="button portfolio__button" type="button">Показать еще</button>
+      </section>
+      <section class="feedback main__feedback" id="anchor__feedback">
+        <h2 class="title feedback__title">Написать мне</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="feedback-form__item">
+            <label class="feedback-form__title" for="feedback-form__name">Ваше имя</label>
+            <input class="feedback-form__item-form" type="text" name="name" id="feedback-form__name"
+              value="Иван Иванов" required>
+          </p>
+          <p class="feedback-form__item">
+            <label class="feedback-form__title" for="feedback-form__email">Email</label>
+            <input class="feedback-form__item-form" type="email" name="email" id="feedback-form__email"
+              value="google@gmail.com" required>
+          </p>
+          <p class="feedback-form__item">
+            <label class="feedback-form__title" for="feedback-form__text">Сообщение</label>
+            <textarea class="feedback-form__item-form feedback-form__field" name="text" id="feedback-form__text">Напишите здесь ваше сообщение.</textarea>
+          </p>
+          <button class="button feedback-form__button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="layout-positioner">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="link" href="">ВК</a>
+        </li>
+        <li class="footer__item">
+          <a class="link" href="">Телеграм</a>
+        </li>
+        <li class="footer__item">
+          <a class="link" href="">Инстаграм</a>
+        </li>
+        <li class="footer__item">
+          <a class="link" href="">Твиттер</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/script-index.js"></script>
+</body>
+
+</html>
