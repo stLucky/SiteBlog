@@ -39,15 +39,15 @@
       <section class="articles main__articles" id="anchor__articles">
         <div class="articles__header">
           <h2 class="title articles__title">Все статьи</h2>
-            <select class="articles__filter" name="tag-filter">
-              <option class="articles__filter-item" value="city">Город</option>
-              <option class="articles__filter-item" value="books">Книги</option>
-              <option class="articles__filter-item" value="travels">Путешествия</option>
-              <option class="articles__filter-item" value="recipes">Рецепты</option>
-              <option class="articles__filter-item" value="photo">Фотографии</option>
-              <option class="articles__filter-item" value="all">Все статьи</option>
-              <option class="articles__filter-item" value="" selected disabled>Выбрать тему</option>
-            </select>
+          <select class="articles__filter" name="tag-filter">
+            <option class="articles__filter-item" value="city">Город</option>
+            <option class="articles__filter-item" value="books">Книги</option>
+            <option class="articles__filter-item" value="travels">Путешествия</option>
+            <option class="articles__filter-item" value="recipes">Рецепты</option>
+            <option class="articles__filter-item" value="photo">Фотографии</option>
+            <option class="articles__filter-item" value="all">Все статьи</option>
+            <option class="articles__filter-item" value="" selected disabled>Выбрать тему</option>
+          </select>
         </div>
         <ul class="articles-top articles__top">
           <li class="articles-top__item articles__article" data-category="travels">
@@ -102,7 +102,7 @@
         <ul class="articles-bottom articles__bottom">
           <li class="articles-bottom__item articles__article" data-category="photo">
             <a class="link" href="article.html">
-              <article class="article-bottom " >
+              <article class="article-bottom ">
                 <img src="img/article-4.jpg" width="590" height="552" alt="Зеленый куст с розовыми цветками">
                 <div class="article-bottom__container">
                   <h3 class="article-bottom__title">Снимки на пленку</h3>
@@ -149,9 +149,10 @@
               Ниже размещены
               несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
             <p class="text about-me-content__text">Если вы хотите написать мне — это можно сделать в соцсетях или через
-              <a class="about-me__link" href="#anchor__feedback">форму</a>. Всегда приятно услышать обратную связь от&nbsp;читателей и
+              <a class="about-me__link" href="#anchor__feedback">форму</a>. Всегда приятно услышать обратную связь
+              от&nbsp;читателей и
               познакомиться поближе.
-              </p>
+            </p>
             <p class="text about-me-content__text">Приятного чтения!</p>
           </div>
           <aside class="about-me__aside">
@@ -165,29 +166,35 @@
         <h2 class="title portfolio__title">Портфолио</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item portfolio__item_theme_white">
-            <article class="product">
-              <h2 class="product__title">Блог HTML Academy</h2>
-              <h3 class="product__subtitle">&laquo;Как учиться продуктивно&raquo;</h3>
-              <p class="text product__text">Про основные методы обучения, которые помогут быстро и надолго запомнить
-                информацию.</p>
-            </article>
+            <a class="link" href="">
+              <article class="product">
+                <h2 class="product__title">Блог HTML Academy</h2>
+                <h3 class="product__subtitle">&laquo;Как учиться продуктивно&raquo;</h3>
+                <p class="text product__text">Про основные методы обучения, которые помогут быстро и надолго запомнить
+                  информацию.</p>
+              </article>
+            </a>
           </li>
           <li class="portfolio__item portfolio__item_theme_black">
-            <article class="product product_theme_white">
-              <h2 class="product__title">Журнал &laquo;LNK&raquo;</h2>
-              <h3 class="product__subtitle">&laquo;Зачем поцелуи нужны человеку? И&nbsp;какие они бывают&raquo;</h3>
-              <p class="text product__text">Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие
-                смысли
-                вкладывают в этот ритуал? И где корни этой практики?</p>
-            </article>
+            <a class="link" href="">
+              <article class="product product_theme_white">
+                <h2 class="product__title">Журнал &laquo;LNK&raquo;</h2>
+                <h3 class="product__subtitle">&laquo;Зачем поцелуи нужны человеку? И&nbsp;какие они бывают&raquo;</h3>
+                <p class="text product__text">Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие
+                  смысли
+                  вкладывают в этот ритуал? И где корни этой практики?</p>
+              </article>
+            </a>
           </li>
           <li class="portfolio__item portfolio__item_theme_grey">
-            <article class="product">
-              <h2 class="product__title">Журнал &laquo;Т &mdash; Л&raquo;</h2>
-              <h3 class="product__subtitle">&laquo;Советы по эффективной<br> удаленной работе&raquo;</h3>
-              <p class="text product__text">Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.
-              </p>
-            </article>
+            <a class="link" href="">
+              <article class="product">
+                <h2 class="product__title">Журнал &laquo;Т &mdash; Л&raquo;</h2>
+                <h3 class="product__subtitle">&laquo;Советы по эффективной<br> удаленной работе&raquo;</h3>
+                <p class="text product__text">Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.
+                </p>
+              </article>
+            </a>
           </li>
         </ul>
         <button class="button portfolio__button" type="button">Показать еще</button>
@@ -197,8 +204,8 @@
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="feedback-form__item">
             <label class="feedback-form__title" for="feedback-form__name">Ваше имя</label>
-            <input class="feedback-form__item-form" type="text" name="name" id="feedback-form__name"
-              value="Иван Иванов" required>
+            <input class="feedback-form__item-form" type="text" name="name" id="feedback-form__name" value="Иван Иванов"
+              required>
           </p>
           <p class="feedback-form__item">
             <label class="feedback-form__title" for="feedback-form__email">Email</label>
@@ -207,7 +214,8 @@
           </p>
           <p class="feedback-form__item">
             <label class="feedback-form__title" for="feedback-form__text">Сообщение</label>
-            <textarea class="feedback-form__item-form feedback-form__field" name="text" id="feedback-form__text">Напишите здесь ваше сообщение.</textarea>
+            <textarea class="feedback-form__item-form feedback-form__field" name="text"
+              id="feedback-form__text">Напишите здесь ваше сообщение.</textarea>
           </p>
           <button class="button feedback-form__button" type="submit">Отправить</button>
         </form>
