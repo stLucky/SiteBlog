@@ -22,13 +22,15 @@ feedbackForm.onsubmit = function (evt) {
     evt.preventDefault();
     feedbackField.classList.add("warning");
     feedbackButton.disabled = true;
+    feedbackButton.classList.add("disabled");
   } 
 };
 
 feedbackField.oninput = function () {
-  if (feedbackField.value.length > 10 || commentField.value.length <=200) {
-    feedbackField.classList.remove('warning');
+  if (feedbackField.value.length > 10 || feedbackField.value.length <=200) {
+    feedbackField.classList.remove("warning");
     feedbackButton.disabled = false;
+    feedbackButton.classList.remove("disabled");
   }
 };
 

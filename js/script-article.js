@@ -7,11 +7,12 @@ let commentList = document.querySelector(".comments__list");
 let commentName = document.querySelector("[type=text]");
 
 commentForm.onsubmit = function (evt) {
-  evt.preventDefault();
   if (commentField.value.length <= 10 || commentField.value.length >200) {
+    evt.preventDefault();
     commentField.classList.add("warning");
     commentButton.disabled = true;
-  } 
+    commentButton.classList.add("disabled");
+  } else {
   let newComment = document.createElement('li');
   newComment.classList.add('user-comment');
   let newBlockquote = document.createElement('blockquote');
@@ -27,12 +28,14 @@ commentForm.onsubmit = function (evt) {
   newBlockquote.append(newP);
   newComment.append(newBlockquote);
   commentList.append(newComment);
+  }
 };
 
 commentField.oninput = function () {
   if (commentField.value.length > 10 || commentField.value.length <=200) {
     commentField.classList.remove('warning');
     commentButton.disabled = false;
+    commentButton.classList.remove("disabled");
   }
 };
 
