@@ -161,6 +161,7 @@ body {
   border: none;
   border-radius: 10px;
   appearance: none;
+  cursor: pointer;
 }
 
 .articles__filter option { font-weight:normal; } 
