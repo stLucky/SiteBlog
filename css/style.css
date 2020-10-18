@@ -130,6 +130,7 @@ body {
   background-color: transparent;
   border: 1px solid var(--extra-black);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /* articles */
@@ -606,6 +607,7 @@ margin: 0 19px 0 0;
   line-height: 26px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .article-footer__button::before {
